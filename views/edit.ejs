@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>edit</title>
+</head>
+<body>
+
+    <div class="main w-full min-h-screen bg-zinc-900">
+    <div class="form px-10 py-10 text-white">
+        <form action="/edit" method="post">
+            <input
+                class="bg-zinc-800 w-full block px-5 py-2 mb-3 rounded-lg outline-none disabled=true text-zinc-500 text-bolds"
+                type="text"
+                value="<%= filename  %> "
+                name="oldname" />
+            <textarea
+                class="bg-zinc-800 w-full block px-5 py-2 resize-none rounded-lg outline-none"
+                placeholder="Enter New Name"
+                name="newname"></textarea>
+            <button class="bg-yellow-700 rounded-lg mt-5 px-4 py-2 w-fit text-white">
+                Update
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
